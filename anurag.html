@@ -1,0 +1,65 @@
+<?php
+// Start the session
+session_start();
+
+// Check if the session is set and the logged-in user is 'anurag'
+if (!isset($_SESSION['username']) || $_SESSION['username'] != 'anurag') {
+    // If the user is not 'anurag', redirect them to the login page
+    header("Location: login.html");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Anurag's Profile</h1>
+        <nav>
+            <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
+
+    <div class="profile-details">
+        <!-- Anurag's Profile Picture and Info -->
+        <img src="friend1.jpeg" alt="Anurag" class="profile-pic">
+        <h2>Anurag</h2>
+        <p>Web Developer. Coffee lover. Dreamer.</p>
+
+        <!-- Anurag's Bio Section -->
+        <div class="bio">
+            <p>Hi, I'm Anurag! I'm passionate about web development and love experimenting with new technologies. In my free time, I enjoy reading, traveling, and indulging in a good cup of coffee.</p>
+        </div>
+
+        <!-- Posts Section -->
+        <div class="posts">
+            <h3>Recent Posts</h3>
+            <p>Had an amazing day working on a new project!</p>
+            
+            <!-- Like Button and Likes Count -->
+            <button class="like-btn">Like</button> 
+            <span class="likes">5 Likes</span>
+            
+            <!-- Comments Section -->
+            <div class="comments">
+                <h4>Comments</h4>
+                <p>Sumit: Awesome work!</p>
+                
+                <!-- Add a New Comment -->
+                <textarea placeholder="Add a comment"></textarea>
+                <button class="comment-btn">Post Comment</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Group of Friends. All rights reserved.</p>
+    </footer>
+</body>
+</html>

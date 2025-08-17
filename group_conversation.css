@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Chat Box Styles */
+.chat-box {
+    max-width: 600px; /* Limit width of chat box */
+    margin: 20px auto; /* Center the chat box */
+    background: white; /* White background for chat box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+}
+
+/* Chat Message Styles */
+.chat-message {
+    border-bottom: 1px solid #eee; /* Separator between messages */
+    padding: 10px 0; /* Padding for each message */
+}
+
+.chat-message:last-child {
+    border-bottom: none; /* Remove bottom border for last message */
+}
+
+.chat-message strong {
+    color: #4CAF50; /* Green for usernames */
+}
+
+/* Input Area Styles */
+.chat-input {
+    display: flex; /* Use flexbox for input area */
+    margin-top: 20px; /* Space above input area */
+}
+
+.chat-input textarea {
+    flex: 1; /* Take up available space */
+    padding: 10px; /* Padding inside textarea */
+    border: 1px solid #ccc; /* Border around textarea */
+    border-radius: 4px; /* Rounded corners */
+    resize: none; /* Prevent resizing */
+}
+
+.chat-input textarea::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+.send-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding inside button */
+    margin-left: 10px; /* Space between textarea and button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.send-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px; /* Space above footer */
+    padding: 10px 0; /* Padding inside footer */
+    background-color: #f1f1f1; /* Light footer background */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Full width */
+}
